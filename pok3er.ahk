@@ -1,6 +1,7 @@
-;Use Capslock as a modifier and not as capslock anymore
+; Map ^ to escape
 ^::Esc
 
+; Use Capslock as a modifier and not as capslock anymore
 $*Capslock::
     Gui, 99:+ToolWindow
     Gui, 99:Show, x-1 w1 NoActivate, Capslock Is Down
@@ -8,7 +9,7 @@ $*Capslock::
     Gui, 99:Destroy
     return
 
-;Write functions for keys while capslock is beeing hold here
+; Write functions for keys while capslock is beeing hold here
 #IfWinExist, Capslock Is Down
 	1::f1
 	2::f2
@@ -28,11 +29,12 @@ $*Capslock::
     i::Up
     l::Right
     j::Left
+	y::AppsKey
 	BS::Del
 	^::^
 #IfWinExist
 
-;Use right and left shifts to toggle capslock
+; Use right and left shifts to toggle capslock
 RShift & LShift::
     SetCapsLockState, % (State:=!State) ? "On" : "Off"
     return
