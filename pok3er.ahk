@@ -11,27 +11,39 @@ $*Capslock::
 
 ; Write functions for keys while capslock is beeing hold here
 #IfWinExist, Capslock Is Down
-	1::f1
-	2::f2
-	3::f3
-	4::f4
-	5::f5
-	6::f6
-	7::f7
-	8::f8
-	9::f9
-	0::f10
+    1::f1
+    2::f2
+    3::f3
+    4::f4
+    5::f5
+    6::f6
+    7::f7
+    8::f8
+    9::f9
+    0::f10
+
     h::Home
     o::PgDn
     u::PgUp
     n::End
+
     k::Down
     i::Up
     l::Right
     j::Left
-	y::AppsKey
-	BS::Del
-	^::^
+
+    y::AppsKey
+    BS::Del
+
+    ^::^
+
+    s::Volume_Down
+    d::Volume_Up
+    f::Volume_Mute
+    w::Media_Play_Pause
+    q::Media_Prev
+    e::Media_Next
+
 #IfWinExist
 
 ; Use right and left shifts to toggle capslock
